@@ -1,0 +1,111 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@include file="header.jsp"%>
+<%@page import="com.project.connection.ConnectionProvider"%>
+<%@page import="java.sql.*"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tutorial</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+	rel="stylesheet">
+<!-- CSS -->
+<link href="style.css" rel="stylesheet">
+<meta name="robots" content="noindex,follow" />
+
+</head>
+
+<body>
+	<section class="productMain">
+		<main class="container">
+
+			<!-- Left Column / Headphones Image -->
+			<div class="left-column">
+				<div class="col-lg-3 text-center">
+					<div class="card border-0 bg-light mb-2">
+						<div class="card-body">
+							<a href="products.jsp"><img src="images/burger-trending.png"
+								class="img-fluid"></a>
+						</div>
+					</div>
+					<h6>Burgers</h6>
+					<p>Starting 60/-</p>
+				</div>
+			</div>
+
+
+			<!-- Right Column -->
+			<div class="right-column">
+
+				<!-- Product Description -->
+				<div class="product-description">
+					<span>Headphones</span>
+					<h1>Chicken Burger</h1>
+					<p>Bread crumbs and milk keep these chicken burgers
+						unbelievably moist and flavourful. Try them at your next barbeque!</p>
+				</div>
+
+				<!-- Product Pricing -->
+				<div class="product-price">
+					<span>148$</span> <a href="#" class="cart-btn">Add to cart</a>
+				</div>
+			</div>
+		</main>
+	</section>
+	<section class="news">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-9 m-auto text-center">
+					<h1>Kitchen Story</h1>
+					<h5>One Stop For Quality Food</h5>
+				</div>
+			</div>
+			<div class="row pt-5">
+				<div class="col-lg-11 m-auto">
+					<div class="row">
+						<div class="col-lg-3 py-3">
+							<H5 class="pb-3">CUSTOMER CARE</H5>
+							<p>Regular</p>
+							<p>On Time</p>
+							<p>Voice Support</p>
+						</div>
+						<div class="col-lg-3 py-3">
+							<H5 class="pb-3">CUSTOMER CARE</H5>
+							<p>Regular</p>
+							<p>On Time</p>
+							<p>Voice Support</p>
+						</div>
+						<div class="col-lg-3 py-3">
+							<H5 class="pb-3">CUSTOMER CARE</H5>
+							<p>Regular</p>
+							<p>On Time</p>
+							<p>Voice Support</p>
+						</div>
+						<div class="col-lg-3 py-3">
+							<H5 class="pb-3">CUSTOMER CARE</H5>
+							<span> <i class="fab fa-facebook"></i></span> <span> <i
+								class="fab fa-instagram"></i></span> <span> <i
+								class="fab fa-twitter"></i></span> <span> <i
+								class="fab fa-google-plus"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<p class="text-center">Manish Machha Copyright &#169 2021 All
+				rights reserved | Kitchen Story</p>
+		</div>
+	</section>
+	<!-- Scripts -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+		charset="utf-8"></script>
+	<script src="script.js" charset="utf-8"></script>
+
+</body>
+
+</html>

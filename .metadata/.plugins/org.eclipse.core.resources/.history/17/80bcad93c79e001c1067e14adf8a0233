@@ -1,0 +1,37 @@
+package com.project.connection;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+
+public class Test extends ConnectionProvider {
+
+	public static void main(String[] args) {
+		try {
+			Connection con = ConnectionProvider.getCon();
+			PreparedStatement ps = con.prepareStatement("insert into products values (?,?,?,?,?,?)");
+			JFileChooser jfc = new JFileChooser();
+			jfc.showOpenDialog(null);
+			File file = jfc.getSelectedFile();
+			FileInputStream fis = new FileInputStream(file);
+
+			ps.setInt(1, 1);
+			ps.setString(2, "burger");
+			ps.setString(3, "burger");
+			ps.setInt(4, 150);
+			ps.setString(5, "active");
+			ps.setBinaryStream(6, fis, fis.available());
+			ps.executeUpdate();
+			JOptionPane.showMessageDialog(null, "image succesfully added");
+
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+	}
+
+}

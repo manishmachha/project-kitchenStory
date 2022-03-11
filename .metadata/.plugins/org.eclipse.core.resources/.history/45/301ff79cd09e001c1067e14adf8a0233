@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@include file="header.jsp"%>
+<%@page import="com.project.connection.ConnectionProvider"%>
+<%@page import="java.sql.*"%>
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tutorial</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+	rel="stylesheet">
+<!-- CSS -->
+<link href="style.css" rel="stylesheet">
+<link href="indexStyle.css" rel="stylesheet">
+<meta name="robots" content="noindex,follow" />
+
+</head>
+
+<body>
+	<section class="productMain">
+		<main class="container">
+
+			<!-- Left Column / Headphones Image -->
+			<div class="left-column">
+				<div class="col-lg-3 text-center">
+					<div class="card border-0 bg-light mb-2">
+						<img src="images/biryani-products.jpg">
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Right Column -->
+			<div class="right-column">
+
+				<!-- Product Description -->
+				<div class="product-description">
+					<span>Headphones</span>
+					<h1>Chicken Burger</h1>
+					<p>Bread crumbs and milk keep these chicken burgers
+						unbelievably moist and flavourful. Try them at your next barbeque!</p>
+				</div>
+
+				<!-- Product Pricing -->
+				<div class="product-price">
+					<span>148$</span> <a href="#" class="cart-btn">Add to cart</a>
+				</div>
+			</div>
+		</main>
+	</section>
+
+	<!-- Scripts -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+		charset="utf-8"></script>
+	<script src="script.js" charset="utf-8"></script>
+
+</body>
+
+</html>

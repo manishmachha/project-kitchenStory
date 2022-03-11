@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\manis\Desktop\Phase 4 kitchen story\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2780106201.index
+797692224.index
+1935130192.index
+3504638653.index
+482418231.index
+1771620750.index

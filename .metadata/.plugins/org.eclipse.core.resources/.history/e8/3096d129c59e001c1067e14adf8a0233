@@ -1,0 +1,22 @@
+package com.project.connection;
+
+public class Test extends ConnectionProvider{
+
+	public static void main(String[] args) {
+		try {
+			Connection con = ConnectionProvider.getCon();
+			PreparedStatement ps = con.prepareStatement("insert into message (name, email, message) values (?,?,?)");
+			ps.setString(1, name);
+			ps.setString(2, email);
+			ps.setString(3, message);
+			ps.executeUpdate();
+			response.sendRedirect("messageus.jsp?msg=valid");
+
+		} catch (Exception e) {
+			System.out.println(e);
+			response.sendRedirect("messageus.jsp?msg=invalid");
+		}
+
+	}
+
+}

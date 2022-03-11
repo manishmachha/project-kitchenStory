@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@include file="header.jsp"%>
+<%@page import="com.project.connection.ConnectionProvider"%>
+<%@ page import="java.sql.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/indexStyle.css">
+</head>
+<body>
+	<div class="col-lg-3 text-center" padding="30px">
+		<div class="card border-0 bg-light mb-2">
+			<div class="card-body">
+				<a href="products.jsp"><img src="images/burger-trending.png"
+					class="img-fluid"></a>
+			</div>
+		</div>
+		<h6>Burgers</h6>
+		<p>Starting 60/-</p>
+	</div>
+</body>
+</html>

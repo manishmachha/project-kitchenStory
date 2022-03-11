@@ -1,0 +1,45 @@
+<section class="footer">
+<section class="news">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-9 m-auto text-center">
+                    <h1>Kitchen Story</h1>
+                    <h5>One Stop For Quality Food </h5>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-11 m-auto">
+                    <div class="row">
+                        <div class="col-lg-3 py-3">
+                            <H5 class="pb-3">CUSTOMER CARE</H5>
+                            <p>Regular</p>
+                            <p>On Time</p>
+                            <p>Voice Support</p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <H5 class="pb-3">CUSTOMER CARE</H5>
+                            <p>Regular</p>
+                            <p>On Time</p>
+                            <p>Voice Support</p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <H5 class="pb-3">CUSTOMER CARE</H5>
+                            <p>Regular</p>
+                            <p>On Time</p>
+                            <p>Voice Support</p>
+                        </div>
+                        <div class="col-lg-3 py-3">
+                            <H5 class="pb-3">CUSTOMER CARE</H5>
+                            <span> <i class="fab fa-facebook"></i></span>
+                            <span> <i class="fab fa-instagram"></i></span>
+                            <span> <i class="fab fa-twitter"></i></span>
+                            <span> <i class="fab fa-google-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">Manish Machha Copyright &#169 2021 All rights reserved | Kitchen Story</p>
+        </div>
+    </section>
+    </section>

@@ -1,0 +1,21 @@
+<%@page import="com.project.connection.ConnectionProvider"%>
+<%@page import="java.sql.*"%>
+<%
+String name = request.getParameter("name").toString();
+String email = session.getAttribute("email").toString();
+String subject = request.getParameter("subject");
+String body = request.getParameter("body");
+try {
+	Connection con = ConnectionProvider.getCon();
+	PreparedStatement ps = con.prepareStatement("insert into message (name, email, subject, body) values (?,?,?,?)");
+	ps.setString(1, name);
+	ps.setString(2, email);
+	ps.setString(3, subject);
+	ps.setString(4, body);
+	ps.executeUpdate();
+	response.sendRedirect("messageus.jsp?msg=valid");
+} catch (Exception e) {
+	System.out.println(e);
+	response.sendRedirect("messageus.jsp?msg=invalid");
+}
+%>
